@@ -1,0 +1,183 @@
+
+:root {
+    --woocommerce: #a46497;
+    --wc-green: #7ad03a;
+    --wc-red: #a00;
+    --wc-orange: #ffba00;
+    --wc-skyblue: #2ea2cc;
+    --wc-secondary: #ebe9eb;
+    --wc-secondary-text: #515151;
+    --wc-highlight: #77a464;
+    --wc-content-bg: #fff;
+    --wc-subtext: #767676;
+    --wc-dark: #393D54;
+    --wc-bg-dark: #252d39;
+    --wc-grey: rgba(55,71,79,0.93);
+    --wc-lightred: #F54646;
+    --wc-lightgrey: #f7f7f7;
+    --wc-gray: #ddd;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.avatar
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 360px;
+}
+
+#chat_area
+{
+	width: 100%;
+	height: 500px;
+	background-color: grey;
+	position: relative;
+	overflow-y:scroll;
+}
+
+.row_chat-me,
+.row_chat-user
+{
+	display: flex;
+	width: 100%;
+}
+
+.row_chat-me
+{
+	justify-content: end;
+}
+
+.row_chat-user
+{
+	justify-content: start;
+}
+
+.message_chat
+{
+
+	width: 40%;
+	padding: 10px 10px 10px 10px;
+	font-size: 17px;
+	color: black;
+	border-radius: 5px;
+}
+
+.message_chat small
+{
+	font-size: 13px;
+}
+
+.message_me
+{
+	background-color: var(--wc-lightgrey);
+}
+
+.message_user
+{
+	background-color: var(--wc-skyblue);
+}
+/*.user_chat,
+.other_chat
+{
+	width: 50%;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+}
+.user_chat
+{
+	position: relative;
+	left: -100%;
+	background-color: red;
+}
+.user_chat
+{
+	position: relative;
+	left: 0;
+	background-color: green;
+}
+*/
+
+.form_chat
+{
+	text-align: center;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+}
+.form_chat textarea
+{
+	width: 95%;
+	height: 30px;
+	font-size: 14px;
+}
+.form_chat button
+{
+	width: 5%;
+	height: 35px;
+	font-size: 14px;
+	padding: 5px 0px 10px 0px;
+
+}
+
+
+/* LIST USER */
+.box_list-user
+{
+	width: 100%;
+	text-align: center;
+}
+
+.list_user
+{
+	width: 100%;
+	list-style-type: none;
+}
+
+.list_user li
+{
+	width:400px;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid lightgrey;
+}
+
+.list_user li:first-child
+{
+	display: block;
+	padding: 10px 10px 10px 10px;
+	background-color: var(--wc-lightgrey);
+	border: 0;
+	text-align: left;
+}
+
+.list_user li span
+{
+	font-size: 18px;
+}
+
+.list_user li i
+{
+	font-size: 14px;
+	position: relative;
+	top: 5px;
+}
+
+.user_online
+{
+	color: green;
+}
+
+.user_offline
+{
+	color: red;
+}
+
+.active
+{
+	background-color: blue;
+}

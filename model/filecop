@@ -1,0 +1,9 @@
+public function setMessageDate($room_message)
+		{
+			$this->room_message = $room_message;
+		}
+
+		public function getRoomId()
+		{
+			return $this->room_message;
+		}

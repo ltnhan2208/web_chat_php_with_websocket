@@ -1,0 +1,1 @@
+Đã có một thông báo về mail của bạn!

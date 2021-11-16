@@ -1,0 +1,95 @@
+:root {
+    --woocommerce: #a46497;
+    --wc-green: #7ad03a;
+    --wc-red: #a00;
+    --wc-orange: #ffba00;
+    --wc-skyblue: #2ea2cc;
+    --wc-secondary: #ebe9eb;
+    --wc-secondary-text: #515151;
+    --wc-highlight: #77a464;
+    --wc-content-bg: #fff;
+    --wc-subtext: #767676;
+    --wc-dark: #393D54;
+    --wc-bg-dark: #252d39;
+    --wc-grey: rgba(55,71,79,0.93);
+    --wc-lightred: #F54646;
+    --wc-lightgrey: #f7f7f7;
+    --wc-gray: #ddd;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#form_edit
+{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    border: 1px solid var(--wc-gray);
+    text-align: center;
+}
+.edit_title
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--wc-secondary);
+    padding: 10px 10px 10px 10px;
+}
+.edit_title span
+{
+     padding: 5px 5px 5px 5px;
+}
+.edit_title a
+{
+    background-color: var(--wc-skyblue);
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    transition: 0.3s;
+}
+
+
+#form_edit .form_label,
+#form_edit .form_ip
+{
+     position: relative;
+     width: 90%;
+    font-size: 17px;
+}
+#form_edit .form_label{left: 5%;text-align: left;}
+#form_edit .form_ip
+{
+    border: 1px solid var(--wc-gray);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+.form_ip-email
+{
+    background-color:  var(--wc-grey);
+    color: white;
+}
+
+#form_edit .btn_update
+{
+     padding: 10px 20px 10px 20px;
+     border: none;
+     outline: none;
+     transition: 0.3s;
+}
+
+/* FOCUS HOVER */
+.edit_title a:hover
+{
+    background-color: var(--wc-orange);
+    color: white;
+    transition: 0.3s;
+}
+
+#form_edit .btn_update:hover
+{
+     background-color: var(--wc-skyblue);
+     color: white;
+     transition: 0.3s;
+}
